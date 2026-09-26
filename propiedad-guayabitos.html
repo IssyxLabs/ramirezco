@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa en Rincón de Guayabitos — Ramírez &amp; Co. Properties</title>
+<meta name="description" content="Ramírez & Co. Properties: casas de playa y residenciales en la Riviera Nayarit. Atención inmediata por WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{navy:'#14213D',sand:'#D9C7A3',ivory:'#F7F4EE',copper:'#B87333',char:'#252525'},fontFamily:{serif:['"Cormorant Garamond"','Georgia','serif'],sans:['Montserrat','system-ui','sans-serif']}}}}
+</script>
+<style>
+.lang-on{background:#B87333;color:#fff}
+.eyebrow{letter-spacing:.35em;text-transform:uppercase;font-size:.75rem;color:#B87333;font-weight:500}
+</style>
+<script src="site.js" defer></script>
+</head>
+<body class="bg-ivory text-char font-sans antialiased">
+
+<!-- Aviso demo -->
+<div class="bg-copper text-white text-center text-xs sm:text-sm py-2 px-4" data-en="<b>Demo site</b> by Issyx Labs — sample brand, images and data. WhatsApp connects to a test assistant.">
+  <b>Sitio de demostración</b> creado por Issyx Labs — marca, imágenes y datos de ejemplo. El WhatsApp conecta con una asistente de prueba.
+</div>
+
+<!-- Header -->
+<header class="sticky top-0 z-40 bg-navy/95 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+    <a href="index.html"><img src="img/logo_horiz_dark.png" alt="Ramírez & Co. Properties" class="h-12 w-auto"></a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-ivory/90">
+      <a href="index.html#propiedades" class="hover:text-copper" data-en="Properties">Propiedades</a>
+      <a href="index.html#nosotros" class="hover:text-copper" data-en="About">Nosotros</a>
+      <a href="index.html#sofia" class="hover:text-copper" data-en="Assistant">Asistente</a>
+      <a href="index.html#contacto" class="hover:text-copper" data-en="Contact">Contacto</a>
+      <div class="flex rounded-full border border-sand/40 overflow-hidden text-xs">
+        <button class="lang-btn px-3 py-1" data-lang="es">ES</button><button class="lang-btn px-3 py-1" data-lang="en">EN</button>
+      </div>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-ivory p-2" aria-label="Menú">
+      <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h20M3 13h20M3 19h20"/></svg>
+    </button>
+  </div>
+  <div id="mobileNav" class="hidden md:hidden bg-navy border-t border-white/10 px-6 py-4 space-y-3 text-ivory">
+    <a href="index.html#propiedades" class="block" data-en="Properties">Propiedades</a>
+    <a href="index.html#nosotros" class="block" data-en="About">Nosotros</a>
+    <a href="index.html#sofia" class="block" data-en="Assistant">Asistente</a>
+    <a href="index.html#contacto" class="block" data-en="Contact">Contacto</a>
+    <div class="flex gap-2 pt-2"><button class="lang-btn px-3 py-1 rounded-full border border-sand/40 text-xs" data-lang="es">ES</button><button class="lang-btn px-3 py-1 rounded-full border border-sand/40 text-xs" data-lang="en">EN</button></div>
+  </div>
+</header>
+
+<section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10">
+  <a href="index.html#propiedades" class="text-sm text-navy hover:text-copper" data-en="← All properties">← Todas las propiedades</a>
+  <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mt-4">
+    <div>
+      <p class="eyebrow" data-en="For sale · Nayarit, Mexico">En venta · Nayarit, México</p>
+      <h1 class="font-serif text-navy text-4xl sm:text-6xl font-semibold mt-2" data-en="Home in Rincón de Guayabitos">Casa en Rincón de Guayabitos</h1>
+      <p class="text-gray-500 mt-2" data-en="5 minutes from the beach · Sold furnished">A 5 minutos de la playa · Se entrega amueblada</p>
+    </div>
+    <p class="font-serif text-4xl sm:text-5xl text-copper font-semibold">$3,350,000 <span class="text-base font-sans text-gray-500">MXN</span></p>
+  </div>
+  <!-- Galería -->
+  <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-2 mt-8 h-[420px] sm:h-[520px] rounded-2xl overflow-hidden">
+    <img data-full="img/14_patio_plantas.jpg" src="img/14_patio_plantas.jpg" class="col-span-2 row-span-2 w-full h-full object-cover cursor-zoom-in" alt="">
+    <img data-full="img/09_fachada_interior.jpg" src="img/09_fachada_interior.jpg" class="w-full h-full object-cover cursor-zoom-in" alt="">
+    <img data-full="img/12_cocina.jpg" src="img/12_cocina.jpg" class="w-full h-full object-cover cursor-zoom-in" alt="">
+    <img data-full="img/08_recamara1.jpg" src="img/08_recamara1.jpg" class="w-full h-full object-cover cursor-zoom-in" alt="">
+    <img data-full="img/05_azotea.jpg" src="img/05_azotea.jpg" class="w-full h-full object-cover cursor-zoom-in" alt="">
+  </div>
+  <div class="grid grid-cols-3 md:grid-cols-6 gap-2 mt-2">
+    <img data-full="img/06_recamara2.jpg" src="img/06_recamara2.jpg" class="aspect-[4/3] w-full object-cover rounded-lg cursor-zoom-in" alt="">
+    <img data-full="img/07_bano.jpg" src="img/07_bano.jpg" class="aspect-[4/3] w-full object-cover rounded-lg cursor-zoom-in" alt="">
+    <img data-full="img/10_patio_servicio.jpg" src="img/10_patio_servicio.jpg" class="aspect-[4/3] w-full object-cover rounded-lg cursor-zoom-in" alt="">
+    <img data-full="img/wa_vista_cerro.jpg" src="img/wa_vista_cerro.jpg" class="aspect-[4/3] w-full object-cover rounded-lg cursor-zoom-in" alt="">
+    <img data-full="img/17_fachada_calle.jpg" src="img/17_fachada_calle.jpg" class="aspect-[4/3] w-full object-cover rounded-lg cursor-zoom-in" alt="">
+    <img data-full="img/02_calle.jpg" src="img/02_calle.jpg" class="aspect-[4/3] w-full object-cover rounded-lg cursor-zoom-in" alt="">
+  </div>
+  <p class="text-xs text-gray-500 mt-2" data-en="Real photos of the property. Only temporary objects (clothes, buckets) were removed; nothing about the house was changed.">Fotos reales de la propiedad. Solo se retiraron objetos temporales (ropa, cubetas); no se modificó nada de la casa.</p>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 grid lg:grid-cols-3 gap-10">
+  <div class="lg:col-span-2">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="bg-white rounded-xl p-5 text-center"><p class="font-serif text-3xl text-copper font-semibold">210 m²</p><p class="text-xs text-gray-500 mt-1" data-en="built area">construcción</p></div>
+      <div class="bg-white rounded-xl p-5 text-center"><p class="font-serif text-3xl text-copper font-semibold">140 m²</p><p class="text-xs text-gray-500 mt-1" data-en="lot size">terreno</p></div>
+      <div class="bg-white rounded-xl p-5 text-center"><p class="font-serif text-3xl text-copper font-semibold">3</p><p class="text-xs text-gray-500 mt-1" data-en="bedrooms">recámaras</p></div>
+      <div class="bg-white rounded-xl p-5 text-center"><p class="font-serif text-3xl text-copper font-semibold">2</p><p class="text-xs text-gray-500 mt-1" data-en="bathrooms">baños</p></div>
+    </div>
+    <h2 class="font-serif text-navy text-3xl font-semibold mt-10" data-en="About this home">Sobre la casa</h2>
+    <p class="mt-4 leading-relaxed" data-en="A home with Mexican beach-house character: brick vaulted ceilings, blue ironwork and bright outdoor spaces. The equipped kitchen opens to the dining area, and the rooftop offers views of the surrounding greenery. It is sold furnished, five minutes from the beach in Rincón de Guayabitos.">Una casa con el carácter de las casas de playa mexicanas: techos de bóveda de ladrillo, herrería azul y espacios exteriores llenos de luz. La cocina equipada se integra al comedor y la azotea ofrece vista a la vegetación de los alrededores. Se entrega amueblada, a cinco minutos de la playa en Rincón de Guayabitos.</p>
+    <h3 class="font-medium text-navy mt-8" data-en="Features">Características</h3>
+    <ul class="grid sm:grid-cols-2 gap-2 mt-3 text-sm">
+      <li>✓ <span data-en="Equipped kitchen">Cocina equipada</span></li><li>✓ <span data-en="Living room">Sala principal</span></li>
+      <li>✓ <span data-en="Dining room">Comedor</span></li><li>✓ <span data-en="Terrace">Terraza</span></li>
+      <li>✓ <span data-en="Garage">Cochera</span></li><li>✓ <span data-en="Service patio">Patio de servicio</span></li>
+      <li>✓ <span data-en="Rooftop">Azotea</span></li><li>✓ <span data-en="Furnished">Amueblada</span></li>
+    </ul>
+    <h2 class="font-serif text-navy text-3xl font-semibold mt-12" data-en="Video tour">Recorrido en video</h2>
+    <video class="mt-4 rounded-2xl w-full max-w-sm bg-navy" controls playsinline preload="metadata" poster="img/14_patio_plantas.jpg" data-src-es="img/video_es.mp4" data-src-en="img/video_en.mp4" src="img/video_es.mp4"></video>
+    <h2 class="font-serif text-navy text-3xl font-semibold mt-12" data-en="Location">Ubicación</h2>
+    <p class="text-sm text-gray-500 mt-2" data-en="Rincón de Guayabitos, Nayarit · 5 minutes from the beach">Rincón de Guayabitos, Nayarit · a 5 minutos de la playa</p>
+    <iframe class="mt-4 w-full h-80 rounded-2xl border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=21.0127419,-105.2714018&z=15&output=embed" title="Mapa"></iframe>
+  </div>
+  <aside class="lg:sticky lg:top-28 h-fit bg-navy text-ivory rounded-2xl p-7">
+    <img src="img/logo_horiz_dark.png" alt="" class="h-10">
+    <p class="font-serif text-3xl font-semibold mt-6" data-en="Schedule your visit">Agenda tu visita</p>
+    <p class="text-sand text-sm mt-2" data-en="Sofia answers instantly on WhatsApp, 24/7.">Sofia te responde al instante por WhatsApp, 24/7.</p>
+    <a class="wa-link block text-center bg-[#25D366] hover:bg-[#1ebe5a] text-white py-3.5 rounded-full font-medium mt-6" target="_blank" rel="noopener" data-en="💬 Message on WhatsApp">💬 Escribir por WhatsApp</a>
+    <a href="https://maps.google.com/?q=21.0127419,-105.2714018" target="_blank" rel="noopener" class="block text-center border border-sand/40 hover:bg-white/10 py-3 rounded-full text-sm mt-3" data-en="Open in Google Maps">Abrir en Google Maps</a>
+    <p class="text-xs text-sand/80 mt-6" data-en="Demo WhatsApp: +34 614 03 84 73">WhatsApp de demostración: +34 614 03 84 73</p>
+  </aside>
+</section>
+
+<div id="lightbox" class="hidden fixed inset-0 z-[60] bg-black/90 items-center justify-center p-4 cursor-zoom-out"><img class="max-h-full max-w-full rounded-lg" alt=""></div>
+<footer class="bg-navy text-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+    <img src="img/logo_principal_dark.png" alt="Ramírez & Co. Properties" class="h-24 w-auto">
+    <p class="text-xs text-center md:text-right max-w-md" data-en="Demo site built by Issyx Labs. Brand, images and data are illustrative; the property photos are real. © 2026">Sitio de demostración creado por Issyx Labs. Marca, imágenes y datos con fines ilustrativos; las fotos de la propiedad son reales. © 2026</p>
+  </div>
+</footer>
+
+<a class="wa-link fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-[#25D366] shadow-lg flex items-center justify-center text-2xl" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+</body>
+</html>

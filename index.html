@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramírez &amp; Co. Properties — Casas de playa en México</title>
+<meta name="description" content="Ramírez & Co. Properties: casas de playa y residenciales en la Riviera Nayarit. Atención inmediata por WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{navy:'#14213D',sand:'#D9C7A3',ivory:'#F7F4EE',copper:'#B87333',char:'#252525'},fontFamily:{serif:['"Cormorant Garamond"','Georgia','serif'],sans:['Montserrat','system-ui','sans-serif']}}}}
+</script>
+<style>
+.lang-on{background:#B87333;color:#fff}
+.eyebrow{letter-spacing:.35em;text-transform:uppercase;font-size:.75rem;color:#B87333;font-weight:500}
+</style>
+<script src="site.js" defer></script>
+</head>
+<body class="bg-ivory text-char font-sans antialiased">
+
+<!-- Aviso demo -->
+<div class="bg-copper text-white text-center text-xs sm:text-sm py-2 px-4" data-en="<b>Demo site</b> by Issyx Labs — sample brand, images and data. WhatsApp connects to a test assistant.">
+  <b>Sitio de demostración</b> creado por Issyx Labs — marca, imágenes y datos de ejemplo. El WhatsApp conecta con una asistente de prueba.
+</div>
+
+<!-- Header -->
+<header class="sticky top-0 z-40 bg-navy/95 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+    <a href="index.html"><img src="img/logo_horiz_dark.png" alt="Ramírez & Co. Properties" class="h-12 w-auto"></a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-ivory/90">
+      <a href="#propiedades" class="hover:text-copper" data-en="Properties">Propiedades</a>
+      <a href="#nosotros" class="hover:text-copper" data-en="About">Nosotros</a>
+      <a href="#sofia" class="hover:text-copper" data-en="Assistant">Asistente</a>
+      <a href="#contacto" class="hover:text-copper" data-en="Contact">Contacto</a>
+      <div class="flex rounded-full border border-sand/40 overflow-hidden text-xs">
+        <button class="lang-btn px-3 py-1" data-lang="es">ES</button><button class="lang-btn px-3 py-1" data-lang="en">EN</button>
+      </div>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-ivory p-2" aria-label="Menú">
+      <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h20M3 13h20M3 19h20"/></svg>
+    </button>
+  </div>
+  <div id="mobileNav" class="hidden md:hidden bg-navy border-t border-white/10 px-6 py-4 space-y-3 text-ivory">
+    <a href="#propiedades" class="block" data-en="Properties">Propiedades</a>
+    <a href="#nosotros" class="block" data-en="About">Nosotros</a>
+    <a href="#sofia" class="block" data-en="Assistant">Asistente</a>
+    <a href="#contacto" class="block" data-en="Contact">Contacto</a>
+    <div class="flex gap-2 pt-2"><button class="lang-btn px-3 py-1 rounded-full border border-sand/40 text-xs" data-lang="es">ES</button><button class="lang-btn px-3 py-1 rounded-full border border-sand/40 text-xs" data-lang="en">EN</button></div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative min-h-[80vh] flex items-end">
+  <img src="img/14_patio_plantas.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-navy/10"></div>
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24 w-full">
+    <p class="eyebrow" data-en="Real estate · Riviera Nayarit">Bienes raíces · Riviera Nayarit</p>
+    <h1 class="font-serif text-ivory text-5xl sm:text-7xl font-semibold leading-[1.05] mt-4 max-w-3xl" data-en="Your home on the Mexican coast">Tu casa en la costa de México</h1>
+    <p class="text-sand text-lg sm:text-xl mt-5 max-w-xl" data-en="Property with vision. Decisions with confidence.">Propiedades con visión. Decisiones con confianza.</p>
+    <div class="flex flex-wrap gap-3 mt-8">
+      <a href="#propiedades" class="bg-copper hover:bg-copper/90 text-white px-7 py-3.5 rounded-full font-medium" data-en="View properties">Ver propiedades</a>
+      <a class="wa-link bg-white/10 hover:bg-white/20 border border-white/30 text-ivory px-7 py-3.5 rounded-full font-medium" target="_blank" rel="noopener" data-en="Message us on WhatsApp">Escríbenos por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- Propiedades -->
+<section id="propiedades" class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+  <p class="eyebrow" data-en="Available">Disponibles</p>
+  <h2 class="font-serif text-navy text-4xl sm:text-5xl font-semibold mt-3" data-en="Featured properties">Propiedades destacadas</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+    <a href="propiedad-guayabitos.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+      <div class="relative aspect-[4/3] overflow-hidden">
+        <img src="img/09_fachada_interior.jpg" alt="Casa en Rincón de Guayabitos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <span class="absolute top-4 left-4 bg-navy text-ivory text-xs px-3 py-1 rounded-full" data-en="For sale">En venta</span>
+      </div>
+      <div class="p-6">
+        <h3 class="font-serif text-2xl text-navy font-semibold" data-en="Home in Rincón de Guayabitos">Casa en Rincón de Guayabitos</h3>
+        <p class="text-sm text-gray-500 mt-1" data-en="Nayarit, Mexico · 5 min from the beach">Nayarit, México · a 5 min de la playa</p>
+        <div class="flex gap-4 text-sm text-char mt-4">
+          <span data-en="3 bed">3 rec.</span><span>·</span><span data-en="2 bath">2 baños</span><span>·</span><span data-en="210 m² built">210 m² const.</span>
+        </div>
+        <div class="flex items-center justify-between mt-5">
+          <span class="font-serif text-2xl text-copper font-semibold">$3,350,000 <span class="text-sm font-sans text-gray-500">MXN</span></span>
+          <span class="text-navy text-sm font-medium group-hover:text-copper" data-en="See details →">Ver detalle →</span>
+        </div>
+      </div>
+    </a>
+    <div class="rounded-2xl border-2 border-dashed border-sand flex flex-col items-center justify-center text-center p-10 min-h-[320px]">
+      <img src="img/logo_icon_light.png" alt="" class="h-16 opacity-60">
+      <p class="font-serif text-2xl text-navy mt-4" data-en="Next property">Próxima propiedad</p>
+      <p class="text-sm text-gray-500 mt-2 max-w-xs" data-en="Each new property gets its own page, photos, video and posts — all in the same brand.">Cada nueva propiedad tendrá su página, fotos, video y publicaciones con la misma imagen.</p>
+    </div>
+    <div class="rounded-2xl border-2 border-dashed border-sand hidden lg:flex flex-col items-center justify-center text-center p-10 min-h-[320px]">
+      <img src="img/logo_icon_light.png" alt="" class="h-16 opacity-60">
+      <p class="font-serif text-2xl text-navy mt-4" data-en="Next property">Próxima propiedad</p>
+    </div>
+  </div>
+</section>
+
+<!-- Nosotros -->
+<section id="nosotros" class="bg-navy text-ivory">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="eyebrow" data-en="About us">Nosotros</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-semibold mt-3" data-en="Personal guidance, clear information">Acompañamiento personal, información clara</h2>
+      <p class="text-sand mt-6 leading-relaxed" data-en="Ramírez &amp; Co. Properties helps buyers from Mexico, the United States and Canada find their beach home, a place to retire or a vacation-rental investment on the Riviera Nayarit.">Ramírez &amp; Co. Properties acompaña a compradores de México, Estados Unidos y Canadá que buscan casa de playa, un lugar para su retiro o una inversión en renta vacacional en la Riviera Nayarit.</p>
+      <div class="grid sm:grid-cols-3 gap-6 mt-10">
+        <div><p class="font-serif text-3xl text-copper">01</p><p class="font-medium mt-2" data-en="Real photos">Fotos reales</p><p class="text-sm text-sand mt-1" data-en="What you see is what you get.">Lo que ves es lo que encuentras.</p></div>
+        <div><p class="font-serif text-3xl text-copper">02</p><p class="font-medium mt-2" data-en="Instant reply">Respuesta inmediata</p><p class="text-sm text-sand mt-1" data-en="24/7 on WhatsApp.">24/7 por WhatsApp.</p></div>
+        <div><p class="font-serif text-3xl text-copper">03</p><p class="font-medium mt-2" data-en="Follow-up">Seguimiento</p><p class="text-sm text-sand mt-1" data-en="From first question to visit.">De la primera pregunta a la visita.</p></div>
+      </div>
+    </div>
+    <div class="relative">
+      <img src="img/05_azotea.jpg" alt="" class="rounded-2xl w-full aspect-[4/3] object-cover">
+      <div class="absolute -bottom-6 -left-4 sm:-left-8 bg-ivory text-navy rounded-xl p-5 shadow-xl max-w-[260px]">
+        <p class="font-serif text-xl font-semibold">Gastón Ramírez</p><p class="text-xs eyebrow mt-1" data-en="Real estate advisor">Asesor inmobiliario</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sofia -->
+<section id="sofia" class="max-w-6xl mx-auto px-4 sm:px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
+  <div>
+    <p class="eyebrow" data-en="Virtual assistant">Asistente virtual</p>
+    <h2 class="font-serif text-navy text-4xl sm:text-5xl font-semibold mt-3" data-en="Ask Sofia, any time">Pregúntale a Sofia, a cualquier hora</h2>
+    <p class="mt-6 leading-relaxed" data-en="Sofia answers on WhatsApp 24 hours a day: she gives you property details, asks what you are looking for and schedules your visit. If you prefer, she connects you with an advisor.">Sofia responde por WhatsApp las 24 horas: te da la información de la propiedad, te pregunta qué buscas y agenda tu visita. Si lo prefieres, te comunica con un asesor.</p>
+    <ul class="mt-6 space-y-3 text-sm">
+      <li class="flex gap-3"><span class="text-copper">✓</span><span data-en="Property information, prices and location">Información, precio y ubicación de cada propiedad</span></li>
+      <li class="flex gap-3"><span class="text-copper">✓</span><span data-en="Visit scheduling">Agenda de visitas</span></li>
+      <li class="flex gap-3"><span class="text-copper">✓</span><span data-en="Spanish and English">Español e inglés</span></li>
+    </ul>
+    <a class="wa-link inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5a] text-white px-7 py-3.5 rounded-full font-medium mt-8" target="_blank" rel="noopener"><span>💬</span><span data-en="Chat with Sofia">Hablar con Sofia</span></a>
+  </div>
+  <div class="bg-[#efe7dd] rounded-3xl p-5 sm:p-8 shadow-inner text-sm space-y-3 max-w-md lg:ml-auto w-full">
+    <div class="ml-auto bg-[#dcf8c6] rounded-xl px-4 py-2 w-fit max-w-[85%]" data-en="Hi, is the house in Guayabitos still available?">Hola, ¿sigue disponible la casa en Guayabitos?</div>
+    <div class="bg-white rounded-xl px-4 py-2 w-fit max-w-[85%]" data-en="Hi! Yes, it is 🏖️ Are you looking to live there, vacation or invest?">¡Hola! Sí, sigue disponible 🏖️ ¿La buscas para vivir, vacacionar o invertir?</div>
+    <div class="ml-auto bg-[#dcf8c6] rounded-xl px-4 py-2 w-fit max-w-[85%]" data-en="Vacation, and rent it out the rest of the year.">Para vacacionar, y rentarla el resto del año.</div>
+    <div class="bg-white rounded-xl px-4 py-2 w-fit max-w-[85%]" data-en="Great choice. Would you like to visit? I have Saturday at 11:00 or Sunday at 10:00.">Excelente opción. ¿Te gustaría visitarla? Tengo el sábado a las 11:00 o el domingo a las 10:00.</div>
+    <p class="text-center text-xs text-gray-500 pt-2" data-en="Sample conversation">Conversación de ejemplo</p>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 grid lg:grid-cols-2 gap-12">
+    <div>
+      <p class="eyebrow" data-en="Contact">Contacto</p>
+      <h2 class="font-serif text-navy text-4xl sm:text-5xl font-semibold mt-3" data-en="Let's talk about your next home">Hablemos de tu próxima casa</h2>
+      <div class="mt-8 space-y-4 text-sm">
+        <p>💬 WhatsApp: <a class="wa-link text-copper font-medium" target="_blank" rel="noopener">+34 614 03 84 73</a> <span class="text-gray-400" data-en="(demo)">(demo)</span></p>
+        <p>📍 <span data-en="Riviera Nayarit, Mexico">Riviera Nayarit, México</span></p>
+        <p>🕘 <span data-en="WhatsApp service 24 hours">Atención por WhatsApp 24 horas</span></p>
+      </div>
+    </div>
+    <form id="contactForm" class="bg-ivory rounded-2xl p-6 sm:p-8 space-y-4">
+      <input name="nombre" required class="w-full rounded-lg border border-sand bg-white px-4 py-3" placeholder="Nombre" data-ph-en="Name">
+      <input name="correo" type="email" class="w-full rounded-lg border border-sand bg-white px-4 py-3" placeholder="Correo (opcional)" data-ph-en="Email (optional)">
+      <textarea name="mensaje" rows="4" class="w-full rounded-lg border border-sand bg-white px-4 py-3" placeholder="¿Qué propiedad te interesa?" data-ph-en="Which property are you interested in?"></textarea>
+      <button class="w-full bg-navy hover:bg-navy/90 text-ivory py-3.5 rounded-full font-medium" data-en="Send via WhatsApp">Enviar por WhatsApp</button>
+      <p class="text-xs text-gray-500" data-en="Your message opens in WhatsApp; we do not store data on this demo site.">Tu mensaje se abre en WhatsApp; este sitio demo no guarda datos.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-navy text-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+    <img src="img/logo_principal_dark.png" alt="Ramírez & Co. Properties" class="h-24 w-auto">
+    <p class="text-xs text-center md:text-right max-w-md" data-en="Demo site built by Issyx Labs. Brand, images and data are illustrative; the property photos are real. © 2026">Sitio de demostración creado por Issyx Labs. Marca, imágenes y datos con fines ilustrativos; las fotos de la propiedad son reales. © 2026</p>
+  </div>
+</footer>
+
+<a class="wa-link fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-[#25D366] shadow-lg flex items-center justify-center text-2xl" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+</body>
+</html>
