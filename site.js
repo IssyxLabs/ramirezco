@@ -48,6 +48,20 @@
       document.querySelectorAll('[data-full]').forEach(t => t.addEventListener('click', () => { img.src = t.dataset.full; lb.classList.remove('hidden'); lb.classList.add('flex'); }));
       lb.addEventListener('click', () => { lb.classList.add('hidden'); lb.classList.remove('flex'); });
     }
+    // Redes sociales: cuentas aún no creadas
+    let tt;
+    document.querySelectorAll('.soc').forEach(a => a.addEventListener('click', e => {
+      e.preventDefault();
+      let t = document.getElementById('socToast');
+      if (!t) {
+        t = document.createElement('div'); t.id = 'socToast'; t.setAttribute('role', 'status');
+        t.className = 'fixed top-24 left-1/2 -translate-x-1/2 z-[70] bg-ivory text-navy text-sm font-medium px-5 py-3 rounded-full shadow-xl border border-sand transition-opacity duration-300 opacity-0 pointer-events-none whitespace-nowrap';
+        document.body.appendChild(t);
+      }
+      t.textContent = a.dataset.soc + ' · ' + (get() === 'en' ? 'Account pending to link' : 'Cuenta pendiente por enlazar');
+      t.classList.remove('opacity-0');
+      clearTimeout(tt); tt = setTimeout(() => t.classList.add('opacity-0'), 2600);
+    }));
     apply(get());
   });
 })();
