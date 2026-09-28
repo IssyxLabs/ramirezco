@@ -44,9 +44,37 @@
     // Galería: clic abre visor
     const lb = document.getElementById('lightbox');
     if (lb) {
-      const img = lb.querySelector('img');
-      document.querySelectorAll('[data-full]').forEach(t => t.addEventListener('click', () => { img.src = t.dataset.full; lb.classList.remove('hidden'); lb.classList.add('flex'); }));
-      lb.addEventListener('click', () => { lb.classList.add('hidden'); lb.classList.remove('flex'); });
+      const img = document.getElementById('lbImg'), cnt = document.getElementById('lbCount');
+      const thumbs = [...document.querySelectorAll('[data-full]')], srcs = thumbs.map(t => t.dataset.full);
+      let cur = 0, x0 = null;
+      const show = i => {
+        cur = (i + srcs.length) % srcs.length;
+        img.style.opacity = 0;
+        img.onload = () => { img.style.opacity = 1; };
+        img.src = srcs[cur];
+        cnt.textContent = (cur + 1) + ' / ' + srcs.length;
+        [cur + 1, cur - 1].forEach(j => { const p = new Image(); p.src = srcs[(j + srcs.length) % srcs.length]; });
+      };
+      const open = i => { show(i); lb.classList.remove('hidden'); lb.classList.add('flex'); document.body.style.overflow = 'hidden'; };
+      const close = () => { lb.classList.add('hidden'); lb.classList.remove('flex'); document.body.style.overflow = ''; };
+      thumbs.forEach((t, i) => t.addEventListener('click', () => open(i)));
+      document.getElementById('lbPrev').addEventListener('click', e => { e.stopPropagation(); show(cur - 1); });
+      document.getElementById('lbNext').addEventListener('click', e => { e.stopPropagation(); show(cur + 1); });
+      document.getElementById('lbClose').addEventListener('click', close);
+      lb.addEventListener('click', e => { if (e.target === lb) close(); });
+      img.addEventListener('click', e => { e.stopPropagation(); show(cur + 1); });
+      document.addEventListener('keydown', e => {
+        if (lb.classList.contains('hidden')) return;
+        if (e.key === 'ArrowRight') show(cur + 1);
+        else if (e.key === 'ArrowLeft') show(cur - 1);
+        else if (e.key === 'Escape') close();
+      });
+      lb.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+      lb.addEventListener('touchend', e => {
+        if (x0 === null) return;
+        const dx = e.changedTouches[0].clientX - x0; x0 = null;
+        if (Math.abs(dx) > 40) show(cur + (dx < 0 ? 1 : -1));
+      });
     }
     // Redes sociales: cuentas aún no creadas
     let tt;
