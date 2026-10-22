@@ -1,2 +1,2 @@
 # ramirezco
-Web demo Ramirez &amp; Co. Properties - propuesta Issyx Labs
+Sitio web de Ramírez & Co. Properties (ramirezcoproperties.mx).
