@@ -1,7 +1,7 @@
 // Idioma ES/EN: cada elemento con data-en guarda su traducción; el español es el HTML original.
 (function () {
   const KEY = 'rc_lang';
-  const WA = '34614038473';
+  const WA = '523315275021';
   const msg = {
     es: 'Hola, me interesa la casa en Rincón de Guayabitos',
     en: "Hi, I'm interested in the home in Rincón de Guayabitos"
