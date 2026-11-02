@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Firma de correo · Ramírez &amp; Co. Properties</title>
+<link rel="icon" href="../img/favicon.png">
+<style>
+  body{margin:0;background:#F7F4EE;color:#252525;font-family:Arial,Helvetica,sans-serif;padding:32px 16px}
+  .wrap{max-width:640px;margin:0 auto}
+  h1{font-family:Georgia,serif;color:#14213D;font-weight:600;font-size:26px;margin:0 0 6px}
+  p.lead{margin:0 0 20px;color:#555;font-size:14px;line-height:1.5}
+  .card{background:#fff;border:1px solid #e6dfd2;border-radius:12px;padding:24px;overflow-x:auto}
+  .btn{display:inline-block;background:#B87333;color:#fff;border:0;border-radius:999px;padding:12px 26px;font-size:15px;font-weight:bold;cursor:pointer;margin-top:18px}
+  .btn:hover{background:#a3642b}
+  .ok{color:#2e7d32;font-size:14px;margin-left:12px;display:none}
+  ol{font-size:14px;line-height:1.6;color:#444;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Firma de correo</h1>
+  <p class="lead">Para la cuenta gaston@ramirezcoproperties.mx. Pulsa el botón, ve a Gmail y pega la firma.</p>
+
+  <div class="card">
+<!-- FIRMA: inicio -->
+<div id="firma">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:#252525;background:#ffffff">
+  <tr>
+    <td valign="top" style="padding:0 16px 0 0">
+      <img src="https://ramirezcoproperties.mx/firma/img/gaston.jpg" width="88" height="88" alt="Gastón Ramírez" style="display:block;width:88px;height:88px;border:0">
+    </td>
+    <td valign="top" style="padding:0 0 0 16px;border-left:2px solid #B87333">
+      <div style="font-family:Georgia,'Times New Roman',serif;font-size:20px;font-weight:bold;color:#14213D;line-height:24px">Gastón Ramírez</div>
+      <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#B87333;line-height:18px;padding-top:2px">Asesor inmobiliario · Real estate advisor</div>
+      <div style="font-size:13px;line-height:21px;padding-top:8px">
+        <span style="color:#14213D;font-weight:bold">WhatsApp</span>&nbsp; <a href="https://wa.me/523315275021" style="color:#252525;text-decoration:none">+52 33 1527 5021</a><br>
+        <span style="color:#14213D;font-weight:bold">Correo</span>&nbsp; <a href="mailto:gaston@ramirezcoproperties.mx" style="color:#252525;text-decoration:none">gaston@ramirezcoproperties.mx</a><br>
+        <span style="color:#14213D;font-weight:bold">Web</span>&nbsp; <a href="https://ramirezcoproperties.mx" style="color:#B87333;text-decoration:none">ramirezcoproperties.mx</a>
+      </div>
+      <div style="font-size:12px;line-height:20px;padding-top:6px">
+        <a href="https://facebook.com/ramirezcoproperties" style="color:#B87333;text-decoration:none;font-weight:bold">Facebook</a>
+        <span style="color:#D9C7A3">&nbsp;|&nbsp;</span>
+        <a href="https://instagram.com/gastonramirez2602" style="color:#B87333;text-decoration:none;font-weight:bold">Instagram</a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding:16px 0 0 0">
+      <a href="https://ramirezcoproperties.mx" style="text-decoration:none"><img src="https://ramirezcoproperties.mx/firma/img/logo.png" width="200" height="60" alt="Ramírez &amp; Co. Properties" style="display:block;width:200px;height:60px;border:0"></a>
+      <div style="font-family:Georgia,'Times New Roman',serif;font-size:13px;font-style:italic;color:#14213D;line-height:18px;padding-top:6px">Tu próxima casa en México · Nayarit · Sinaloa · Jalisco</div>
+    </td>
+  </tr>
+</table>
+</div>
+<!-- FIRMA: fin -->
+  </div>
+
+  <button class="btn" id="copiar">Copiar firma</button><span class="ok" id="ok">Firma copiada. Ahora pégala en Gmail.</span>
+
+  <h2 style="font-family:Georgia,serif;color:#14213D;font-size:18px;margin:28px 0 6px">Cómo ponerla en Gmail</h2>
+  <ol>
+    <li>Entra a Gmail con gaston@ramirezcoproperties.mx desde una computadora.</li>
+    <li>Rueda de ajustes (arriba a la derecha) → <b>Ver todos los ajustes</b> → pestaña <b>General</b>.</li>
+    <li>En <b>Firma</b>, pulsa <b>Crear nueva</b>, ponle de nombre "Ramírez &amp; Co." y pega con Ctrl+V (Cmd+V en Mac).</li>
+    <li>En <b>Valores predeterminados de firma</b>, elígela para "Correos nuevos" y para "Al responder o reenviar".</li>
+    <li>Baja hasta el final y pulsa <b>Guardar cambios</b>.</li>
+  </ol>
+</div>
+<script>
+document.getElementById('copiar').addEventListener('click', async function(){
+  var el=document.getElementById('firma'), ok=document.getElementById('ok');
+  try{
+    var html=el.innerHTML, text=el.innerText;
+    await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),'text/plain':new Blob([text],{type:'text/plain'})})]);
+  }catch(e){
+    var r=document.createRange(); r.selectNode(el); var s=getSelection(); s.removeAllRanges(); s.addRange(r);
+    document.execCommand('copy'); s.removeAllRanges();
+  }
+  ok.style.display='inline';
+});
+</script>
+</body>
+</html>
