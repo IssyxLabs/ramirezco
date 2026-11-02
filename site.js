@@ -2,10 +2,16 @@
 (function () {
   const KEY = 'rc_lang';
   const WA = '523315275021';
+  // Mensaje de WhatsApp: cada página de propiedad lo define en <body data-wa-es / data-wa-en>.
   const msg = {
-    es: 'Hola, me interesa la casa en Rincón de Guayabitos',
-    en: "Hi, I'm interested in the home in Rincón de Guayabitos"
+    es: 'Hola, me interesa información sobre sus propiedades',
+    en: "Hi, I'd like information about your properties"
   };
+  document.addEventListener('DOMContentLoaded', () => {
+    const b = document.body.dataset;
+    if (b.waEs) msg.es = b.waEs;
+    if (b.waEn) msg.en = b.waEn;
+  });
   function get() { try { return localStorage.getItem(KEY) || 'es'; } catch (e) { return 'es'; } }
   function set(l) { try { localStorage.setItem(KEY, l); } catch (e) {} }
   function apply(l) {
