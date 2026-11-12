@@ -32,6 +32,8 @@
     });
     document.querySelectorAll('video[data-src-es]').forEach(v => {
       const s = l === 'en' ? v.dataset.srcEn : v.dataset.srcEs;
+      const p = l === 'en' ? v.dataset.posterEn : v.dataset.posterEs;
+      if (p && v.getAttribute('poster') !== p) v.setAttribute('poster', p);
       if (v.getAttribute('src') !== s) { v.setAttribute('src', s); v.load(); }
     });
   }
